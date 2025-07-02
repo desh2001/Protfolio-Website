@@ -215,6 +215,8 @@ section{
 .home-content .social-media a:hover{
     background: var(--main-color);
     color: var(--text-color);
+    transform: scale(1.05);
+    box-shadow: 0 0 10px var(--main-color);
 }
 
 
@@ -251,7 +253,8 @@ section{
     position: absolute;
     bottom: 0;
     right: 0;
-    height: 700px;
-    width: 700px;
+    height: 640px;
+    width: 640px;
     pointer-events: none;
+    margin-right: 9.5rem;
 }
