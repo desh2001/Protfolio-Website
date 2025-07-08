@@ -183,11 +183,11 @@ section{
 
 .btn-box .btn {
     position: relative;
-    display: flex; /* Use flex for centering */
+    display: flex; 
     justify-content: center;
     align-items: center;
     width: 15rem;
-    height: 4rem; /* You can adjust height */
+    height: 4rem; 
     background: var(--main-color);
     border: 0.2rem solid var(--main-color);
     border-radius: 0.8rem;
@@ -214,13 +214,13 @@ section{
 }
 
 .btn-box .btn:hover::before {
-    width: 100%; /* Full background effect on hover */
+    width: 100%; 
 }
 
 .btn-box .btn:hover {
-    color: var(--main-color); /* Swap text color for contrast */
-    transform: scale(1.05); /* Slight scaling effect
-    /* box-shadow: 0 0 10px var(--main-color); Optional glow effect */ */
+    color: var(--main-color); /
+    transform: scale(1.05); 
+    /* box-shadow: 0 0 10px var(--main-color); */
 }
 
 .home-content .social-media a{
@@ -457,3 +457,472 @@ span{
     font-size: 1.6rem;
     padding-top: .5rem;
 }
+
+
+
+
+
+
+/* -------skills------ */
+.skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: .6rem;
+    background: var(--secondary-color);
+    padding: 1rem;
+}
+
+.skills h2{
+    padding-bottom: -2rem;
+    padding-top: -10rem;
+}
+
+.skills-section {
+    text-align: center;
+}
+
+
+.skills-container {
+    display: flex;
+    gap: 90px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skills-box {
+    position: relative;
+    padding: 3.5rem;
+    gap: 5rem;
+    border: .2rem solid var(--main-color);
+    border-radius: 1.2rem;
+    margin-bottom: 2rem;
+    width: 40rem;
+}
+
+.skills-box h3 {
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 2.5rem;
+}
+
+.skill {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.skill-icon {
+    display: relative;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 4.5rem;
+    color: var(--main-color);
+}
+
+.skill span {
+    display: inline-flex;
+    margin-bottom: 1px;
+    font-size: 1.8rem;
+    justify-content: center;
+}
+
+.skill img{
+    width: 11%;
+    height: auto;
+}
+
+.progress-bar {
+    position: relative;
+    background: #333;
+    height: 14px;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    background: var(--main-color);
+    height: 100%;
+    text-align: right;
+    padding-right: 5px;
+    font-size: 1.3rem;
+    color: white;
+    line-height: 10px;
+    transition: width 2s ease-in-out;
+}
+
+/* .progress.html {
+    width: 90%;
+}
+
+.progress.css {
+    width: 80%;
+}
+
+.progress.js {
+    width: 70%;
+}
+
+
+
+        .skill-bar {
+            background: #ddd;
+            height: 12px;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .skill-bar-fill {
+            height: 100%;
+            background: #007BFF;
+            width: 0;
+            border-radius: 6px;
+            transition: width 1s ease-in-out;
+        }
+
+        /* Example percentage widths */
+        .photoshop { width: 0%; }
+        .illustrator { width: 75%; }
+        .java { width: 70%; }
+        .cpp { width: 65%; }
+        .python { width: 85%; }
+        .html { width: 90%; }
+        .css { width: 85%; } */
+
+
+
+
+
+
+
+
+/*------activities section------ */
+.extra-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: .6rem;
+    background: var(--secondary-color);
+    padding: 50px 10px;
+    
+}
+
+
+
+
+.activities{
+    border: .2rem solid var(--main-color);
+    border-radius: 1.2rem;
+    margin-bottom: 2rem;
+    width: 40rem;
+    padding: 40px 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 40px auto;
+    box-shadow: 0 0 20px var(--secondary-color);
+    text-align: center;
+}
+
+.activities-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.6rem;
+}
+
+.activities-list li {
+    background: var(--secondary-color);
+    margin: 10px 0;
+    padding: 12px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.activities-list li:hover {
+    box-shadow: 0 0 5px var(--main-color);
+}
+
+
+/*-----Projects section----- */
+.projects {
+    background:var(--secondary-color);
+    color: #fff;
+    padding: 50px 10px;
+    text-align: center;
+}
+
+.projects-section h2 {
+    font-size: 3rem;
+    color: #ff00ff;
+    margin-bottom: 40px;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* 3 equal columns */
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: stretch;
+    padding: 0 5%;
+    margin: 5% 5%;
+    
+}
+
+.project-card {
+    background:var(--background-color);
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    
+    transition: transform 0.3s ease;
+    
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 3px 6px var(--main-color);
+    
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+/* .btn-more {
+    display: inline-block;
+    padding: 8px 15px;
+    background: #ff00ff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.btn-more:hover {
+    background: #e600e6;
+} */
+
+
+
+.btn-more {
+    position: relative;
+    display: inline-block; 
+    justify-content: center;
+    background: var(--main-color);
+    border: 0.2rem solid var(--main-color);
+    border-radius: 0.8rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    color: var(--background-color);
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
+    cursor: pointer;
+    padding: 8px 15px;
+    text-decoration: none;
+}
+
+.btn-more::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%; 
+    height: 100%;
+    background: var(--background-color);
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.btn-more:hover::before {
+    width: 100%; 
+}
+
+.btn-more:hover {
+    color: var(--main-color); /
+    transform: scale(1.05); 
+    /* box-shadow: 0 0 10px var(--main-color); */
+} 
+
+
+/*----contact section----- */
+.contact-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: auto;
+    padding: 10rem;
+}
+
+.contact-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .contact-info {
+            background: var(--main-color);
+            padding: 40px;
+            border-radius: 10px;
+            width: 60vh;
+            text-align: center;
+            margin:5rem;
+        }
+
+        .contact-info img {
+            width: 300px;
+            margin-bottom: 10px;
+        }
+
+        .contact-info h2 {
+            margin: 10px 0;
+        }
+
+        .contact-info p {
+            font-size: 14px;
+            margin: 10px 0 20px;
+        }
+
+
+        .contact-de{
+            color: #fff;
+            font-size: 1.6rem;
+            font-weight: 500;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            margin: 5px 0;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .info-item i {
+            color: #fff;
+        }
+
+        .social-icons-set {
+            margin-top: 20px;
+            height: 10rem;
+            width: 100%;
+        }
+
+        .social-icons-set i {
+            margin: 0 8px;
+            cursor: pointer;
+            color: #ffffff;
+            transition: transform 0.3s;
+        }
+
+        .social-icons i:hover {
+            transform: scale(1.2);
+        }
+
+        .contact-form {
+            background: var(--secondary-color);
+            padding: 30px;
+            border-radius: 10px;
+            width: 600px;
+            height: 70%;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px ;
+            border: none;
+            border-radius: 5px;
+            background: var(--background-color);
+            color: #fff;
+        }
+
+        .form-row {
+            display: flex;
+            gap: 10px;
+        }
+
+        .form-row input {
+            flex: 1;
+        }
+
+        .send-btn {
+            background: var(--main-color);
+            border: 4px solid var(--text-color);
+            color: #fff;
+            border: none;
+            padding: 12px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .send-btn:hover {
+            background: var(--background-color);
+            border: 1px solid var(--text-color);
+            box-shadow: 0 0 10px var(--main-color);
+        }
+
+        .bx bxl-github {
+            color: var(--background-color);
+            font-size: 100px;
+            transition: color 1.8s ease;
+        }
+
+        .bx bxl-github:hover {
+            color: var(--background-color);
+            scale: 1.8;
+        }
+
+/* ---footer---- */
+
+            footer {
+                background-color: var(--main-color);
+                color: #fff;
+                text-align: center;
+                padding: 20px 10px;
+            }
+
+            footer p{
+                font-size: 16px;
+            }
+
+            .social-icons {
+                margin: 10px 0;
+            }
+
+            .social-icons a {
+                color: #fff;
+                margin: 0 10px;
+                font-size: 20px;
+                text-decoration: none;
+                transition: color 0.3s ease;
+            }
+
+            .social-icons a:hover {
+                color:var(--background-color); /* Change color on hover */
+            }
